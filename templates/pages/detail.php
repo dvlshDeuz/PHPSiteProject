@@ -17,8 +17,8 @@ View::includeTemplate('layout/header.php', ['title' => $car->name, 'pageTitle' =
             <span class="inline-block line-through pl-6 text-gray-400"><?php \App\View::includeTemplate('blocks/price.php', ['price' => $car->old_price]);?> ₽</span>
         <?php }?>
     </p>
-    <div class="mb-2"><span class="text-black font-bold text-xl">Категория: </span><?=htmlspecialchars($car->category->name ?? 'Не указана')?></div>
-    <div class="mb-2"><span class="text-black font-bold text-xl">Доступные цвета: </span><?=htmlspecialchars($car->colors->pluck('name')->implode(', ') ? [] : 'Нет Доступных цветов')?></div>
+    <div class="mb-2"><span class="text-black font-bold text-xl">Категория: </span><?=htmlspecialchars($car->category->name)?></div>
+    <div class="mb-2"><span class="text-black font-bold text-xl">Доступные цвета: </span><?=htmlspecialchars($car->colors->pluck('name')->implode(', '))?></div>
     <form class="block">
         <button type="submit" class="inline-block bg-red-600 hover:bg-opacity-70 focus:outline-none text-white font-bold py-2 px-4 rounded">
             Купить

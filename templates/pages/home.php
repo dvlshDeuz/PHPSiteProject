@@ -45,11 +45,6 @@ View::includeTemplate('layout/header.php', ['title' => 'Топ товары', 'p
                 <td class="border px-4 py-2">Страница управления моделями, доступна только авторизованному пользователю</td>
             </tr>
             <tr>
-                <td class="border px-4 py-2">Gui для веб-форм</td>
-                <td class="border px-4 py-2"><a href="#" class="text-gray-600 hover:text-red-600">В разработке</a></td>
-                <td class="border px-4 py-2">Страница с версткой элементов формы (вспомогательная страница)</td>
-            </tr>
-            <tr>
                 <td class="border px-4 py-2">Форма авторизации</td>
                 <td class="border px-4 py-2"><a href="/login" class="text-gray-600 hover:text-red-600">/login</a></td>
                 <td class="border px-4 py-2">Страница с формой авторизации, не доступна для авторизованного пользователя</td>
